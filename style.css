@@ -12,6 +12,11 @@ section {
   align-items: center;
 }
 
+div .line-wrap {
+  height: 5px;
+  position: fixed;
+  z-index: 99;
+}
 .planche {
   /*position: relative;
   left: 50%;
@@ -21,4 +26,23 @@ section {
   height: 90vh;
   width: 40vw;
   background-color: brown;
+}
+.line-v {
+  display: block;
+  content: "";
+  position: fixed;
+  margin-left: 35px;
+  height: 90vh;
+  width: 10px;
+  background-color: rgb(26, 26, 26);
+}
+.line-h {
+  display: block;
+  content: "";
+  position: fixed;
+  margin-left: 35px;
+  height: 90vh;
+  width: 10px;
+  background-color: rgb(26, 26, 26);
+  transform: rotateZ(90deg);
 }
