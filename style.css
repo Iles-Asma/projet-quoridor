@@ -1,20 +1,11 @@
-<<<<<<< Updated upstream
-* {
+*{
+
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-section {
-=======
-*{
-
-  /* overflow-x: hidden;
-  overflow-y: hidden; */
-}
-
 
 main {
->>>>>>> Stashed changes
   height: 100vh;
   width: 100vw;
   /* position: absolute; */
@@ -31,6 +22,6 @@ main {
   border :3px rgb(29, 255, 97) solid;
 
   height: 90vh;
-  width: 40vw;
+  width: 30vw;
   background-color: brown;
 }
