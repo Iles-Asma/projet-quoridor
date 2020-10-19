@@ -1,9 +1,9 @@
 "user scrict";
 $(document).ready(function () {
   function square() {
-    let oui = document.createElement("div");
-    oui.classList.add("square");
-    document.querySelector("section").appendChild(oui);
+    let carre = document.createElement("div");
+    carre.classList.add("square");
+    document.querySelector("section").appendChild(carre);
   }
   for (i = 0; i > 17; i++) {}
   square();
