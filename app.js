@@ -1,16 +1,46 @@
 "user scrict";
 $(document).ready(function () {
-  function square() {
-    let carre = document.createElement("div");
-    carre.classList.add("square");
-    document.querySelector("section").appendChild(carre);
-  }
-  for (i = 0; i > 17; i++) {
-    function square() {
+
+
+
+
+  function ranger(numeroDeRanger) {
+    if (numeroDeRanger % 2 == 0) {
+      $("tbody").append(`<tr class="row"></tr>`);
+    } else {
+      $("tbody").append(`<tr class="case row "></tr>`);
       
-      oui.classList.add("square");
-      document.querySelector("section").appendChild(oui);
+
     }
   }
-  square();
+
+  for (var numeroDeRanger = 0; numeroDeRanger < 17; numeroDeRanger++) {
+    ranger(numeroDeRanger); // fonction
+
+
+  }
+
+
+  function carre(i) {
+    if (i % 2 == 0) {
+
+      $("tr").append(`<td class="square"></td>`);
+
+    } else {
+
+      $("tr").append(`<td class="ligne square"></td>`);
+    }
+  }
+
+
+
+  for (var i = 0; i < 17; i++) {
+    carre(i); // je met i en parametre, argument
+
+
+
+  }
+
+
+
 });
