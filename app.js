@@ -6,9 +6,10 @@ $(document).ready(function () {
 
   function ranger(numeroDeRanger) {
     if (numeroDeRanger % 2 == 0) {
-      $("tbody").append(`<tr class="row"></tr>`);
+      $("section").append(`<div class="row"></div>`);
     } else {
-      $("tbody").append(`<tr class="case row "></tr>`);
+      $("section").append(`<div class="case row "></div>`);
+      //$("div.row").css({'background-color': 'rgb(0, 0, 0)','height':'30px'})/
       
 
     }
@@ -24,11 +25,11 @@ $(document).ready(function () {
   function carre(i) {
     if (i % 2 == 0) {
 
-      $("tr").append(`<td class="square"></td>`);
+      $("div").append(`<p class="square"></p>`);
 
     } else {
 
-      $("tr").append(`<td class="ligne square"></td>`);
+      $("div").append(`<p class="ligne square"></p>`);
     }
   }
 
