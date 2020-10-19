@@ -5,6 +5,12 @@ $(document).ready(function () {
     oui.classList.add("square");
     document.querySelector("section").appendChild(oui);
   }
-  for (i = 0; i > 17; i++) {}
+  for (i = 0; i > 17; i++) {
+    function square() {
+      
+      oui.classList.add("square");
+      document.querySelector("section").appendChild(oui);
+    }
+  }
   square();
 });
