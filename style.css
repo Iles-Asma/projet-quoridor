@@ -1,102 +1,100 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 
 }
-body{
+
+body {
   height: 100vh;
- 
+
   background-color: burlywood;
-  
+
 
 }
-section{
- display: flex;
+
+section {
+  display: flex;
   /* justify-content: space-between; */
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
   flex-direction: column;
-    position: relative;
+  position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   height: 75vh;
-    width: 500px;
-    padding: 5px;
+  width: 500px;
+  padding: 5px;
   background-color: rgb(169, 182, 148);
-  overflow-y: hidden;
-
 
 }
- div{
+
+div {
   display: flex;
-    justify-content: space-around;
-    /* flex-direction: row; */
-    margin: 0;
+  justify-content: space-around;
+  /* flex-direction: row; */
+  margin: 0;
 
- }
+}
 
- div p{
-   justify-content: center;
- }
 
 .square {
   /*80px;*/
   height: 45px;
- width: 60px; 
- background-color: black;
- 
+  width: 65px;
+  background-color: black;
+
 }
-.square:hover{
+
+.square:hover {
   background-color: rgba(109, 106, 106, 0.542);
 }
+
 .square_2 {
   /*80px;*/
   display: inline-block;
-  height: 5px;/* 100%*/
- width: 55px;  /* 15%*/
- margin: 0;
- background-color: white;
- 
+  height: 5px;
+  /* 100%*/
+  width: 55px;
+  /* 15%*/
+  margin: 0;
+  background-color: white;
+
 }
-.square_2:hover{
+
+.square_2:hover {
   background-color: rgba(151, 8, 8, 0.542);
 }
-p{
-  margin-block-start: 5px;
-margin-block-end: 0;
+
+p {
+  /* margin-block-start: 5px;
+margin-block-end: 0;*/
+  margin: 0%;
 }
 
 
-.row{
- 
-  height: 40px;
-} 
+.row {
 
-.case{
+  height: 40px;
+}
+
+.case {
   display: flex;
   height: 5px;
   width: auto;
   /* margin: 1px; */
- /* background-color: white;*/
+  /* background-color: white;*/
 }
-tbody{
-  padding: 30px;
-height: 100vh;
-  
-  width: 80vw;
 
-  background-color: cadetblue;
-}
 /* style ligne*/
-.ligne{
-  width: 6px;
+.ligne {
+  width: 5px;
   margin: 0px;
   height: 45px;
   background-color: white;
 
 }
-.ligne:hover{
+
+.ligne:hover {
   background-color: rgba(189, 0, 0, 0.542);
-}
-.case:hover{
-  background-color: rgba(100, 148, 237, 0.309);
 }
