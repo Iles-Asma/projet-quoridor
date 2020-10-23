@@ -42,9 +42,10 @@ div {
 
 .square {
   /*80px;*/
-  height: 61px;
+   height: 61px;
     width: 61px;
-  background-color: black;
+    
+   
 
 }
 
@@ -77,6 +78,8 @@ margin-block-end: 0;*/
 .row {
 display: flex;
   height: 61px;
+  background-color: black;
+  
 }
 
 .case {
@@ -101,8 +104,9 @@ display: flex;
 }
 
 .pion-1{
-  width: 20px;
-  height: 20px;
-  color: red;
-  border-radius: 20px;
+
+  margin-bottom: 5px;
+  background-color:red;
+
+  border-radius: 50px;
 }
