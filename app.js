@@ -1,11 +1,11 @@
 "user scrict";
 $(document).ready(function () {
 
-
+  var countRanger = 0;
   function ranger(numeroDeRanger) {
 
     if (numeroDeRanger % 2 == 0) {
-      $("section").append('<div class="row"></div>');
+      $("section").append(`<div id="ranger-${countRanger++}" class="row"></div>`);
 
     } else {
       $("section").append('<p class="case"></p>');
