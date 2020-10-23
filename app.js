@@ -21,12 +21,15 @@ $(document).ready(function () {
     ranger(numeroDeRanger);
   }
 
-  function carre(i) {
+  var countCase = 1;
 
+  function carre(i) {
+  
 
     if (i % 2 == 0) {
+// `` reconnais le ${} comme element js
+      $("div").append(`<span id="carre-${countCase++}" class="square"></span>`);
 
-      $("div").append('<span  class="square" ></span>');
 
     } else {
 
