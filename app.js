@@ -44,6 +44,7 @@ $(document).ready(function () {
 
   function pions(){
     $("#carre-5").append("<span class='pion-1'></span>").addClass("pion-1");
+    $("span:last").append("<span class='pion-2'></span>").addClass("pion-2");
 
   };
 

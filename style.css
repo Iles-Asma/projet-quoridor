@@ -9,21 +9,22 @@ body {
   height: 100vh;
 
   background-color: burlywood;
-
+  display: flex;
+  justify-content: center;
 
 }
 
 section {
   display: flex;
- 
+  justify-content: center;
   flex-wrap: nowrap;
   flex-direction: column;
   position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  /* left: 50%;
+  top: 50%; */
+  /* transform: translate(-50%, -50%); */
   height: 100vh;
-    width: 650px;
+  width: 650px;
   padding-left: 10px;
   padding-top: 5px;
   padding-right: 10px;
@@ -36,6 +37,7 @@ div {
   justify-content: space-around;
   /* flex-direction: row; */
   margin: 0;
+ 
 
 }
 
@@ -107,6 +109,14 @@ display: flex;
 
   margin-bottom: 5px;
   background-color:red;
-
   border-radius: 50px;
 }
+
+.pion-2{
+
+  margin-bottom: 5px;
+  background-color:green;
+  border-radius: 40px;
+}
+
+
