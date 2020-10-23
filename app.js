@@ -42,6 +42,23 @@ $(document).ready(function () {
 
   }
 
+  function pions(){
+    $("#carre-5").append("<span class='pion-1'></span>").addClass("pion-1");
+
+
+  };
+
+  pions();
+
+
+
+
+
+
+
+
+
+
   function murs(walls) {
 
 
@@ -56,7 +73,6 @@ $(document).ready(function () {
 
   for (var walls = 0; walls < 9; walls++) {
     murs(walls);
-
 
   };
 
