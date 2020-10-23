@@ -2,6 +2,7 @@
 $(document).ready(function () {
 
   var countRanger = 0;
+
   function ranger(numeroDeRanger) {
 
     if (numeroDeRanger % 2 == 0) {
@@ -9,9 +10,6 @@ $(document).ready(function () {
 
     } else {
       $("section").append('<p class="case"></p>');
-
-
-
 
     }
 
@@ -24,12 +22,10 @@ $(document).ready(function () {
   var countCase = 1;
 
   function carre(i) {
-  
 
     if (i % 2 == 0) {
-// `` reconnais le ${} comme element js
+      // `` reconnais le ${} comme element js
       $("div").append(`<span id="carre-${countCase++}" class="square"></span>`);
-
 
     } else {
 
@@ -42,7 +38,7 @@ $(document).ready(function () {
 
   }
 
-  function pions(){
+  function pions() {
     $("#carre-5").append("<span class='pion-1'></span>").addClass("pion-1");
     $("span:last").append("<span class='pion-2'></span>").addClass("pion-2");
 
@@ -50,10 +46,7 @@ $(document).ready(function () {
 
   pions();
 
-
-
   function murs(walls) {
-
 
     if (walls < 0) {
 
