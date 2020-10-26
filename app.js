@@ -43,7 +43,6 @@ $(document).ready(function () {
     $("span:last").append("<span class='pion-2'></span>").addClass("pion-2");
 
   };
-
   pions();
 
   function murs(walls) {
