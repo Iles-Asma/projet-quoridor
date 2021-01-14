@@ -1,7 +1,11 @@
-#plateau {
+/* #plateau {
 	width: 530px;
 	height: 530px;
 	float: left;
+
+	border-radius: ;
+
+	
 }
 .carre, .mur {
 	float: left;
@@ -44,4 +48,119 @@
 }
 #info{
 	float:left;
+} */
+
+/* .plateau-jeu{
+	border-radius: 20px;
+	width: 530px;
+	height: 530px;
+	margin: auto;
+	border-radius:20px;
+
+}; */
+
+
+
+
+#plateau {
+
+	width: 530px;
+	height: 530px;
+	margin: auto;
+	border-radius: 10px;
+
+
+
+}
+
+h1 {
+	font-family: 'Poppins';
+	font-weight: 600;
+	text-align: center;
+
+}
+
+#joueur_1,
+#joueur_2 {
+	height: 80%;
+	width: 80%;
+	margin: 10%;
+	border-radius: 2em;
+
+}
+
+#joueur_1 {
+	border-radius: 37px;
+	background: linear-gradient(45deg, #fffffd, #e6e2d4);
+	box-shadow: 8px -8px 14px #706e68,
+		-8px 8px 14px #ffffff;
+}
+
+#joueur_2 {
+	border-radius: 37px;
+	border-radius: 37px;
+	background: linear-gradient(45deg, #1f2123, #1a1c1e);
+	box-shadow: 8px -8px 14px #0d0e0f,
+		-8px 8px 14px #2d3033;
+}
+
+.carre,
+.mur {
+	float: left;
+
+}
+
+.carre {
+	width: 50px;
+	height: 50px;
+
+
+	background: #e0e0e0;
+	box-shadow: 20px 20px 60px #bebebe,
+		-20px -20px 60px #ffffff;
+}
+
+.mur {
+	width: 10px;
+	height: 50px;
+	border-radius: 0px;
+	background: linear-gradient(45deg, #696b72, #7d7f88);
+	box-shadow: 5px -5px 100px #4d4f54,
+		-5px 5px 100px #9d9faa;
+}
+
+.mur.selection,
+.mur.placed {
+
+	border-radius: 0px;
+	background: #b6d3e9;
+	box-shadow: 11px -11px 22px #9db5c8,
+		-11px 11px 22px #cff1ff;
+}
+
+.mur.horizontal {
+	height: 10px;
+	width: 50px;
+	padding: 0 5px;
+}
+
+.mur.horizontal.left {
+	padding-left: 0;
+}
+
+.mur.horizontal.right {
+	padding-left: 0;
+}
+
+#info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+	width: 525px;
+	position: relative;
+	font-family: 'Poppins';
+	padding: 30px;
+
+
 }

@@ -1,4 +1,4 @@
-var Quoridor = new function() {
+const Quoridor = new function() {
 	this.plateauDimension = 9;
 	this.startingMurs = 10;
 	this.joueur1=null;
@@ -10,10 +10,10 @@ var Quoridor = new function() {
 
 		 // generation du plateau  i = ligne et j = colonne
 		
-		for(var i = 0; i < this.plateauDimension; i++) {
+		for(let i = 0; i < this.plateauDimension; i++) {
 			if(i != 0) {
-				for(var j = 0; j < this.plateauDimension; j++) {
-					var horizontalMur = $('<div class="mur horizontal" />')
+				for(let j = 0; j < this.plateauDimension; j++) {
+					let horizontalMur = $('<div class="mur horizontal" />')
 					if(j == 0) {
 						horizontalMur.addClass('left');
 					}
@@ -23,11 +23,11 @@ var Quoridor = new function() {
 					plateau.append(horizontalMur);
 				}
 			}
-			for( var j = 0; j < this.plateauDimension; j++) {
-				var carreNumber = (i * this.plateauDimension) + j;
-				var carre = $('<div id="carre_' + carreNumber + '" class="carre" />')
+			for( let j = 0; j < this.plateauDimension; j++) {
+				let carreNumber = (i * this.plateauDimension) + j;
+				let carre = $('<div id="carre_' + carreNumber + '" class="carre" />')
 				if(j != 0) {
-					var mur = $('<div class="mur" />')
+					let mur = $('<div class="mur" />')
 					plateau.append(mur);
 				}
 				plateau.append(carre);
@@ -59,7 +59,7 @@ var Quoridor = new function() {
 	// affiche la postion du joueur au clique surun  carre
 	function bindCarreEventHandlers () {
 		$('.carre').click(function() {
-			var newPosition = parseInt($(this).attr('id').split('_')[1]);
+			let newPosition = parseInt($(this).attr('id').split('_')[1]);
 			moveJoueur(newPosition);
 		});
 	}
@@ -96,8 +96,8 @@ var Quoridor = new function() {
 	}
 	
 	function isAdjacentCarre(newPosition){
-		var isAdjacentCarre = false;
-		var adjacentCarres = getAdjacentCarres();
+		let isAdjacentCarre = false;
+		let adjacentCarres = getAdjacentCarres();
 		$.each(adjacentCarres,function(i, v){
 			if(newPosition == v){
 				isAdjacentCarre = true;
@@ -107,14 +107,14 @@ var Quoridor = new function() {
 	}
 	
 	function getAdjacentCarres(){
-		var adjacentCarres = [];
+		let adjacentCarres = [];
 		getAdjacentVerticalCarres(adjacentCarres);
 		getAdjacentHorizontalCarres(adjacentCarres);
 		return adjacentCarres;
 	}
 	
 	function getAdjacentVerticalCarres(adjacentCarres){	
-		var plateauDimension = Quoridor.plateauDimension;
+		let plateauDimension = Quoridor.plateauDimension;
 		if(currentTour.pos < plateauDimension){
 			adjacentCarres.push(currentTour.pos + plateauDimension);
 		}
@@ -144,7 +144,7 @@ var Quoridor = new function() {
 	
 	function updateJoueurPosition (position){	
 		this.currentTour.pos = position;
-		var joueurDiv = $('<div id="' + this.currentTour.id + '" />');
+		let joueurDiv = $('<div id="' + this.currentTour.id + '" />');
 		$('#' + this.currentTour.id).remove();
 		$('#carre_' + position).append(joueurDiv);
 	}
@@ -193,7 +193,7 @@ var Quoridor = new function() {
 	}
 };
 
-var Information = new function(){
+const Information = new function(){
 	this.panel = $('<div id="info" />');
 	this.currentTour = $('<div id="currentTour" />');
 	this.joueur1MursRemaining = $('<div id="joueur1MursRemaining" />');
