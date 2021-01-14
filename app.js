@@ -8,7 +8,7 @@ var Quoridor = new function() {
 	this.init = function(plateau){
 		 var plateau = $('#plateau');
 
-		 // generation du plateau 
+		 // generation du plateau  i = ligne et j = colonne
 		
 		for(var i = 0; i < this.plateauDimension; i++) {
 			if(i != 0) {
