@@ -1,0 +1,47 @@
+#plateau {
+	width: 530px;
+	height: 530px;
+	float: left;
+}
+.carre, .mur {
+	float: left;
+}
+.carre {
+	width: 50px;
+	height: 50px;
+	background-color: #742;
+}
+.mur {
+	width: 10px;
+	height: 50px;
+	background-color: #c75;
+}
+.mur.selection, .mur.placed {
+	background-color: #cc5;
+}
+.mur.horizontal {
+	height: 10px;
+	width: 50px;
+	padding: 0 5px;
+}
+.mur.horizontal.left {
+	padding-left: 0;
+}
+.mur.horizontal.right {
+	padding-left: 0;
+}
+#joueur_1, #joueur_2 {
+	height: 80%;
+	width: 80%;
+	margin: 10%;
+	border-radius: 2em;
+}
+#joueur_1 {
+	background-color: #fff;
+}
+#joueur_2 {
+	background-color: #000;
+}
+#info{
+	float:left;
+}
