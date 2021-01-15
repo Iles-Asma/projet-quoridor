@@ -73,7 +73,6 @@ const Quoridor = new function() {
 		currentTour = this.joueur1;
 
 		// changement de joueurs
-		
 		updateJoueurPosition(this.currentTour.pos); 
 		switchJoueur();
 		updateJoueurPosition(this.currentTour.pos);
@@ -88,7 +87,6 @@ const Quoridor = new function() {
 		}
 	}
 
-	// 
 	
 	function isPossibleMove (newPosition){
 		//TODO:joueur moving logic
@@ -159,7 +157,7 @@ const Quoridor = new function() {
 	}
 	
 	function isMurPlaceable (mur) {
-		//TODO:mur placing logic
+		//TODO:mur placing logical
 		return hasMursRemaining();
 	}
 	
